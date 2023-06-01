@@ -1,0 +1,55 @@
+.doctorInfo {
+    display: flex;
+}
+
+.imgWrapper {
+    position: relative;
+    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(71, 117, 119, 0.3);
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    
+    @media (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.doctorName {
+    font-weight: var(--semibold-font-weight);
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.doctorSpecialization {
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 5px;
+
+    color: rgba(17, 17, 17, 0.5);
+}

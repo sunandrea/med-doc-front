@@ -1,0 +1,54 @@
+.analysis_item {
+    @media (min-width: 768px) {
+        margin-right: 64px;
+    }
+}
+
+.doctor_name {
+    font-weight: var(--semibold-font-weight);
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--main-text);
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+.doctor_specialization {
+    font-size: 10px;
+    line-height: 1.2;
+    color: rgba(17, 17, 17, 0.5);
+
+    @media (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+
+.inside_item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.inside_itemNested > li {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    color: var(--main-text);
+    font-weight: var(--semibold-font-weight);
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration-line: underline;
+}
+
+.dot {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #edf5f5;
+    border-radius: 50px;
+    margin-right: 8px;
+}

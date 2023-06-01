@@ -1,0 +1,15 @@
+.imgWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgba(71, 117, 119, 0.2);
+    border-radius: 200px;
+    padding: 13px;
+
+    @media screen and (min-width: 768px) {
+        width: 180px;
+        height: 180px;
+        padding: 19px;
+    }
+}

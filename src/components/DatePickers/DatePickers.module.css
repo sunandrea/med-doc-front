@@ -1,0 +1,17 @@
+.wrapp {
+    display: flex;
+}
+
+.btnGrup {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(71, 117, 119, 0.3);
+    border-radius: 1000px;
+    width: 76px;
+    height: 34px;
+}
+
+.btnGrup:hover,
+.btnGrup:focus {
+    border-color: var(--dark-green);
+}

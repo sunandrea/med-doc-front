@@ -1,0 +1,86 @@
+.imgWrapper {
+    position: relative;
+    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(71, 117, 119, 0.3);
+    border-radius: 50px;
+
+    @media (min-width: 768px) {
+        width: 72px;
+        height: 72px;
+        margin-right: 16px;
+    }
+}
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    @media (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.lable {
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: left;
+
+    color: rgba(17, 17, 17, 0.5);
+}
+
+.infoWrapp {
+    @media (min-width: 768px) {
+        max-width: 200px;
+        margin-left: auto;
+    }
+}
+
+.patientName {
+    font-weight: var(--semibold-font-weight);
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 4px;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.visitDate {
+    font-weight: var(--semibold-font-weight);
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+}
+
+.textInformations {
+    font-weight: var(--bold-font-weight);
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    background-image: linear-gradient(253.01deg, #68c494 -56.38%, #477577 105.61%, #31496d 274.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    @media (min-width: 768px) {
+        font-size: 38px;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+}

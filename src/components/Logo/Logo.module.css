@@ -1,0 +1,12 @@
+.logo_desk {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .logo_mobile {
+        display: none;
+    }
+    .logo_desk {
+        display: block;
+    }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Harvard Medical School",
+    "address": "25 Shattuck St, Boston, MA 02115, United States",
+    "phone": "(617) 432-1000",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010159/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_bijhvy.png"
+  },
+  {
+    "name": "Johns Hopkins School of Medicine",
+    "address": "733 N Broadway, Baltimore, MD 21205, United States",
+    "phone": "(410) 955-5000",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010159/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_1_ta3d36.png"
+  },
+  {
+    "name": "Stanford University School of Medicine",
+    "address": "291 Campus Dr, Stanford, CA 94305, United States",
+    "phone": "(650) 723-6861",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010159/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_ftkoak.jpg"
+  },
+  {
+    "name": "Yale School of Medicine",
+    "address": "333 Cedar St, New Haven, CT 06510, United States",
+    "phone": "(203) 785-4672",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010159/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_2_hjyetd.png"
+  },
+  {
+    "name": "Columbia University Vagelos College of Physicians and Surgeons",
+    "address": "630 W 168th St, New York, NY 10032, United States",
+    "phone": "(212) 305-2500",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010158/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_1_sodzqb.jpg"
+  },
+  {
+    "name": "Perelman School of Medicine at the University of Pennsylvania",
+    "address": "3400 Civic Center Blvd, Philadelphia, PA 19104, United States",
+    "phone": "(215) 662-4000",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010158/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_3_kuhghl.png"
+  },
+  {
+    "name": "David Geffen School of Medicine at UCLA",
+    "address": "10833 Le Conte Ave, Los Angeles, CA 90095, United States",
+    "phone": "(310) 825-9111",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010158/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_4_wahgsy.png"
+  },
+  {
+    "name": "University of Michigan Medical School",
+    "address": "5301 E Huron River Dr, Ann Arbor, MI 48105, United States",
+    "phone": "(734) 647-5600",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010158/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_5_utolcf.png"
+  },
+  {
+    "name": "Duke University School of Medicine",
+    "address": "Duke University, Durham, NC 27710, United States",
+    "phone": "(919) 684-8111",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010158/Med-back/images_1_pa1z5a.jpg"
+  },
+  {
+    "name": "Baylor College of Medicine",
+    "address": "1 Baylor Plaza, Houston, TX 77030, United States",
+    "phone": "(713) 798-4951",
+    "image": "https://res.cloudinary.com/dec1shvoo/image/upload/v1682010158/Med-back/%D0%91%D0%B5%D0%B7_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_2_tohlev.jpg"
+  }
+]

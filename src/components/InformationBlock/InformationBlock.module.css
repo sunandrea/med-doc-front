@@ -1,0 +1,43 @@
+.info_bgr {
+    width: 100%;
+    height: auto;
+    background: url(../../images/InformationBlock/Background.png),
+        linear-gradient(253.01deg, #68c494 -56.38%, #477577 105.61%, #31496d 274.54%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0px;
+    border-radius: 32px;
+    padding: 64px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .info_bgr {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px;
+    }
+}
+
+.text_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+    .text_wrapper {
+        width: 615px;
+        gap: 32px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .text_wrapper {
+        width: 715px;
+    }
+}
+
+.info_img {
+    transform: scale(1.2);
+}

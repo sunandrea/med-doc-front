@@ -1,0 +1,46 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btnDisabled {
+    color: rgba(0, 0, 0, 0.3);
+    background: #edf5f5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btnActive {
+    background-color: #477577;
+    color: white;
+    cursor: pointer;
+}
+
+.swiper_nav_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .swiper_nav_btns {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        width: 100%;
+        bottom: 50%;
+        left: 0;
+    }
+}

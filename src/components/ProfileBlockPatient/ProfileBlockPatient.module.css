@@ -1,0 +1,64 @@
+.wrapper {
+    position: relative;
+    grid-column: span 2;
+    min-width: 335px;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: var(--card-background);
+}
+
+.role {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    background-color: var(--minor-items-background);
+}
+
+/* PHOTO */
+.imgWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgba(71, 117, 119, 0.2);
+    border-radius: 200px;
+}
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 124px;
+    height: 124px;
+}
+/* PHOTO */
+
+.list {
+    margin: 0 auto 32px;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-weight: var(--regular-font-weight);
+    font-size: 12px;
+    line-height: 1.33;
+    color: #111111;
+}
+
+.data {
+    font-weight: var(--semibold-font-weight);
+    font-size: 14px;
+    line-height: 1.29;
+    color: #111111;
+}

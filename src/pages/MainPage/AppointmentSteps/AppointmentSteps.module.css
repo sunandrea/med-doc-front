@@ -1,0 +1,50 @@
+.swiper {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper {
+        display: block;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .swiper {
+        display: none;
+    }
+}
+.card_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc((100% - 16px * 3) / 2);
+
+    gap: 28px;
+}
+
+.card_text {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 18px;
+    line-height: 1.2;
+    /* or 122% */
+
+    gap: 14px;
+
+    color: #111111;
+}
+
+.card_number {
+    font-family: var(--main-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 80px;
+    line-height: 100%;
+    /* identical to box height, or 80px */
+
+    letter-spacing: -4px;
+
+    color: #477577;
+}

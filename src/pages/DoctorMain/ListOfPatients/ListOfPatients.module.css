@@ -1,0 +1,63 @@
+.filter {
+    /* position: relative;
+box-sizing: border-box;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 14px 18px;
+margin-bottom: 32px; */
+
+    width: 204px;
+    height: 48px;
+    margin-top: 64px;
+
+    /* background: #FFFFFF;
+border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 16px; */
+}
+
+.filterArrowBox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+
+    width: 40px;
+    height: 52px;
+}
+
+.filterArrow {
+    transform: rotate(180deg);
+}
+
+.filterFilter {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    z-index: 10;
+    width: 204px;
+    height: 98px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    padding: 14px 18px;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 23px rgba(17, 17, 17, 0.05);
+    border-radius: 16px;
+
+    opacity: 0;
+}
+
+.patientList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}

@@ -1,0 +1,13 @@
+.wrap {
+    background: #ffffff;
+    border-radius: 0 20px 20px 20px;
+    width: 335px;
+    padding: 32px 24px;
+}
+.formWraper {
+    margin-bottom: 24px;
+}
+.formItem:not(:last-child) {
+    margin-bottom: 8px;
+}
+

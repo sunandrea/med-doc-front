@@ -1,0 +1,103 @@
+.PatientInformation {
+    display: grid;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1440px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.PatientResults {
+    position: relative;
+    padding: 32px;
+    background-color: var(--card-background);
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+.PatientResults_Edit {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.PatientResults_Edit > svg {
+    display: block;
+}
+.PatientResults_VisitRecord {
+    /* max-width: max-content; */
+    /* margin: 0 auto 32px; */
+    margin-bottom: 32px;
+}
+.PatientResults_VisitRecord > li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    gap: 4px;
+}
+.PatientResults_VisitRecord > li:not(:last-child) {
+    margin-bottom: 8px;
+}
+.PatientResults_VisitRecord > li > span {
+    font-weight: var(--semibold-font-weight);
+    font-size: 16px;
+    line-height: 20px;
+}
+/* .PatientResults_Details {
+    max-width: max-content;
+    margin: 0 auto;
+} */
+.PatientResults_Details > li {
+    display: flex;
+    align-items: center;
+    font-weight: var(--semibold-font-weight);
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    gap: 4px;
+}
+.PatientResults_Details > li:not(:last-child) {
+    margin-bottom: 12px;
+}
+.PatientResults_DetailsIcon {
+    fill: #477577;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+    .PatientResults {
+        margin-bottom: auto;
+    }
+    .PatientResults_Edit {
+        top: 32px;
+        right: 16px;
+    }
+    .PatientResults_VisitRecord > li > span {
+        line-height: 24px;
+    }
+    .PatientResults_Details > li {
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .PatientResults {
+        grid-column: 1;
+        margin-bottom: auto;
+    }
+    .PatientResults_Edit {
+        top: 32px;
+        right: 32px;
+    }
+    .PatientResults_VisitRecord > li > span {
+        line-height: 24px;
+    }
+    .PatientResults_Details > li {
+        line-height: 24px;
+    }
+}

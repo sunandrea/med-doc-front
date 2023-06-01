@@ -1,0 +1,81 @@
+.visitsList {
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+        margin-top: 32px;
+    }
+}
+
+.visitsItem {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+
+    background: var(--card-background);
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 32px;
+    }
+}
+
+.visitsItem:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.doctorDetails {
+    flex-direction: column;
+    position: relative;
+}
+
+.rating {
+    position: absolute;
+    top: 45px;
+    left: 86px;
+
+    @media (max-width: 768px) {
+        top: 38px;
+        left: 73px;
+    }
+}
+
+.rating:hover,
+.rating:focus {
+    cursor: pointer;
+}
+
+.visitInfo {
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+.visitTitle {
+    font-weight: var(--bold-font-weight);
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 16px;
+}
+
+.visitDate {
+    font-weight: var(--semibold-font-weight);
+    font-size: 14px;
+    line-height: 1.29;
+    border-radius: 1000px;
+    padding: 8px 12px;
+
+    background: var(--minor-items-background);
+
+    @media (min-width: 1440px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.visitDate:not(:last-child) {
+    margin-right: 8px;
+}

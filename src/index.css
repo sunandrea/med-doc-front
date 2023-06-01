@@ -1,15 +1,178 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap'); */
+
+:root {
+    /* color */
+    --main-text: #111111;
+
+    --dark-green: #0f3937;
+    --regular-green: #477577;
+    --linear-green: linear-gradient(253.01deg, #68c494 -56.38%, #477577 105.61%, #31496d 274.54%);
+    --light-green: #68c494;
+
+    --regular-orange: #f3672b;
+    --light-orange: #fc7b43;
+
+    --card-background: #fafafa;
+    --minor-items-background: #edf5f5;
+    --star-background: #d9d9d9;
+    --star-filled-background: #ffc531;
+
+    /* font */
+    /* --main-font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semibold-font-weight: 600;
+    --bold-font-weight: 700;
+
+    /* responsiveness */
+    --pre-mobile: 374.98px;
+    --mobile: 375px;
+    --pre-tablet: 767.98px;
+    --tablet: 768px;
+    --pre-desktop: 1439.98px;
+    --desktop: 1440px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: var(--main-font-family);
+    color: var(--main-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+.container {
+    /* max-width: 1440px; */
+    padding: 0 20px 40px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 32px 48px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 0 128px 64px;
+    }
+}
+.section {
+    padding: 40px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 48px 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 64px 0;
+    }
+}
+
+/* swiper */
+@media screen and (min-width: 1440px) {
+    .swiper {
+        padding: 0 42px;
+    }
+}
+
+.swiper-wrapper {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    height: auto;
+}
+
+.swiper-scrollbar-drag {
+    background: #477577;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    max-width: 200px;
+    height: 8px;
+
+    background: #e8e8e8;
+    border-radius: 100px;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* accordion */
+.MuiAccordionSummary-content {
+    justify-content: space-between;
+}
+.MuiAccordion-root {
+    box-shadow: none;
+}
+
+.MuiTabs-root {
+    display: none;
+}
+
+.MuiAccordionSummary-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .MuiAccordionSummary-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

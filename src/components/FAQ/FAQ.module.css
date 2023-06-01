@@ -1,0 +1,80 @@
+.FAQwrapper {
+    width: 100%;
+    padding: 0px 20px 80px;
+
+    @media (min-width: 768px) {
+        padding: 0px 32px 96px;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 0px 128px 128px;
+    }
+}
+
+.sectionTitle {
+    font-weight: var(--bold-font-weight);
+    font-size: 32px;
+    line-height: 1.25;
+
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        font-size: 44px;
+        line-height: 1.09;
+    }
+}
+
+.questionsTitle {
+    font-weight: var(--medium-font-weight);
+    font-size: 18px;
+    line-height: 1.33;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+.questionsList {
+    max-width: 100%;
+    margin-top: 8px;
+
+    @media (min-width: 768px) {
+        margin-right: 20px;
+    }
+}
+
+.questionsItems {
+    font-weight: var(--regular-font-weight);
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.6);
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.questionsItems:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.toggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: all 1s ease-out;
+
+    @media (min-width: 768px) {
+        width: 40px;
+        height: 40px;
+    }
+}

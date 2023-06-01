@@ -1,0 +1,7 @@
+.Badge {
+    display: flex;
+    background-color: var(--minor-items-background);
+    padding: 8px 16px;
+    border-radius: 1000px;
+    width: 100%;
+}

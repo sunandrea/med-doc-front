@@ -1,0 +1,37 @@
+.specializationBlock {
+    background: #fafafa;
+    border-radius: 16px;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    position: relative;
+
+    @media screen and (min-width: 768px) and (max-width: 1439.98px) {
+        margin-bottom: auto;
+    }
+    @media screen and (min-width: 1440px) {
+        grid-column: 1;
+        margin-bottom: auto;
+        padding: 16px 56px;
+    }
+}
+
+/* .specializationList {
+    display: flex;
+    flex-direction: column;
+} */
+
+.specializationItem {
+    font-size: 14px;
+    line-height: 1.28;
+}
+
+.specializationItem:first-child {
+    margin-bottom: 10px;
+}
+
+.specializationText {
+    font-family: var(--main-font-family);
+    font-weight: var(--semibold-font-weight);
+    font-size: 16px;
+    line-height: 1.5;
+}

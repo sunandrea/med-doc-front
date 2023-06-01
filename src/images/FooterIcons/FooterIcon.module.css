@@ -1,0 +1,54 @@
+.facebook_desk,
+.inst_desk,
+.youtube_desk {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .facebook_mob,
+    .inst_mob,
+    .youtube_mob {
+        display: none;
+    }
+    .facebook_desk,
+    .inst_desk,
+    .youtube_desk {
+        display: block;
+    }
+}
+
+.facebook_mob {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 11px 16px ;
+}
+
+.inst_mob {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 11px 11px ;
+}
+
+.youtube_mob {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 12px 11px ;
+}
+
+.facebook_desk {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 14px 20px ;
+}
+
+.youtube_desk {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 16px 14px ;
+}
+
+.inst_desk {
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 14px;
+}

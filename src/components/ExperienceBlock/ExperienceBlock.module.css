@@ -1,0 +1,166 @@
+.experienceBlock {
+    font-family: var(--main-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceTitleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.experienceTitle {
+    font-family: var(--main-font-family);
+    font-weight: var(--semibold-font-weight);
+    font-size: 18px;
+    line-height: 1.3;
+    @media (min-width: 768px) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+.experienceAdd {
+    background: none;
+    border: none;
+}
+
+.experienceList {
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceListItem {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.experienceListItem:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.experienceListItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1.5px solid rgba(209, 213, 219, 0.2);
+}
+.experienceItemWrapper {
+    display: flex;
+}
+
+.experienceImage {
+    border: 1px solid rgba(71, 117, 119, 0.3);
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    @media (min-width: 768px) {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+.plugLogo {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    @media (min-width: 768px) {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: 768px) {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+.experienceInfoTitle {
+    margin-bottom: 4px;
+
+    font-family: var(--main-font-family);
+    font-weight: var(--semibold-font-weight);
+    font-size: 14px;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.experienceInfoDate {
+    margin-bottom: 6px;
+    font-family: var(--main-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 12px;
+    line-height: 1.2;
+    color: rgba(17, 17, 17, 0.5);
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.experienceInfoAbout {
+    font-family: var(--main-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 12px;
+    line-height: 1.2;
+    color: rgba(17, 17, 17, 0.5);
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.buttonEditWrapper {
+    display: flex;
+}
+
+.buttonEdit {
+    display: flex;
+    border: 0;
+    background: none;
+}
+
+.experienceInfoDateFlex {
+    display: none;
+    margin-right: 16px;
+    font-family: var(--main-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 14px;
+    line-height: 1.3;
+    color: rgba(17, 17, 17, 0.5);
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.experienceInfoDateFlex {
+    display: none;
+    margin-right: 16px;
+    font-family: var(--main-font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: 14px;
+    line-height: 1.3;
+    color: rgba(17, 17, 17, 0.5);
+    @media (min-width: 768px) {
+        display: block;
+    }
+}

@@ -1,0 +1,35 @@
+.ratingTitle {
+    font-weight: var(--bold-font-weight);
+    font-size: 12px;
+    line-height: 1.17;
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+        margin-top: 16px;
+    }
+}
+
+.ratingText {
+    min-width: 288px;
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #484f5c;
+
+    @media (min-width: 768px) {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 360px;
+    }
+}
+
+/* @media (min-width: 768px) {
+    width: 212px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 224px;
+  } */

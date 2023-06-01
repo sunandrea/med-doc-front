@@ -1,0 +1,24 @@
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.label {
+    width: 83px;
+    height: 14px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: #111111;
+    margin-bottom: 8px;
+}

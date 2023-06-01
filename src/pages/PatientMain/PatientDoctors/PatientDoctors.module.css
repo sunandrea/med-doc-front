@@ -1,0 +1,16 @@
+.filter {
+    padding-top: 40px;
+    /* margin-bottom: 16px; */
+}
+
+@media screen and (min-width: 768px) {
+    .filter {
+        padding-top: 64px;
+        /* margin-bottom: 32px; */
+    }
+}
+/* @media screen and (min-width: 1440px) {
+    .filter {
+        max-width: 750px;
+    }
+} */
