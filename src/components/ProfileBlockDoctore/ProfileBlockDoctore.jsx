@@ -13,78 +13,98 @@ import { selectUserInfo } from 'redux/info/selectors';
 import css from './ProfileBlockDoctore.module.css';
 
 export const ProfileBlockDoctore = ({ children, userInfo }) => {
-    const [appModal, setAppModal] = useState(false);
+  const [appModal, setAppModal] = useState(false);
 
-    const doctorId = useSelector(selectUserInfo)?._id;
-    const { id } = useParams();
-    const personalLoc = doctorId === id;
+  const doctorId = useSelector(selectUserInfo)?._id;
+  const { id } = useParams();
+  const personalLoc = doctorId === id;
+  return (
+    <Card>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div>
+          <Badge> {userInfo.role}</Badge>
+        </div>
+        <div>
+          <StarRating value={userInfo.rating} />
+        </div>
+      </div>
 
-    return (
-        <Card>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div>
-                    <Badge> {userInfo.role}</Badge>
-                </div>
-                <div>
-                    <StarRating value={userInfo.rating} />
-                </div>
-            </div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '32px',
+          justifyContent: 'space-between',
+          flexGrow: 1,
+          alignItems: 'center',
+        }}
+      >
+        <ProfileImage avatar={userInfo.avatarURL} personalLoc={personalLoc} />
+        <div style={{ textAlign: 'center' }}>
+          <ul className={css.list}>
+            <li className={css.item}>
+              Name:
+              <p className={css.data}>{userInfo.name}</p>
+            </li>
+            {userInfo.gender && (
+              <li className={css.item}>
+                Gender:<p className={css.data}>{userInfo.gender}</p>
+              </li>
+            )}
+            {userInfo.birthday && (
+              <li className={css.item}>
+                Date of birth:
+                <p className={css.data}>
+                  {moment(userInfo.birthday).format('DD MMMM YYYY')}
+                </p>
+              </li>
+            )}
 
-            <div
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '32px',
-                    justifyContent: 'space-between',
-                    flexGrow: 1,
-                }}
+            <li className={css.item}>
+              Phone number:<p className={css.data}>{userInfo.number}</p>
+            </li>
+            {userInfo.price && (
+              <li className={css.item}>
+                Price:<p className={css.data}>{userInfo.price} UAH /1 hour</p>
+              </li>
+            )}
+            {userInfo.specialization && !personalLoc && (
+              <li className={css.item}>
+                Specialization:
+                <p className={css.data}>{userInfo.specialization} </p>
+              </li>
+            )}
+          </ul>
+        </div>
+        {personalLoc && (
+          <Button color="primary" onClick={() => setAppModal(!appModal)}>
+            <UilPen style={{ width: '20px', height: '20px' }} />
+            <Typography
+              color="text.black"
+              sx={{ lineHeight: 1.285, textTransform: 'none' }}
             >
-                <ProfileImage avatar={userInfo.avatarURL} personalLoc={personalLoc} />
-                <div style={{ textAlign: 'center' }}>
-                    <ul className={css.list}>
-                        <li className={css.item}>
-                            Name:
-                            <p className={css.data}>{userInfo.name}</p>
-                        </li>
-                        {userInfo.gender && (
-                            <li className={css.item}>
-                                Gender:<p className={css.data}>{userInfo.gender}</p>
-                            </li>
-                        )}
-                        {userInfo.birthday && (
-                            <li className={css.item}>
-                                Date of birth:
-                                <p className={css.data}>{moment(userInfo.birthday).format('DD MMMM YYYY')}</p>
-                            </li>
-                        )}
+              Edit profile
+            </Typography>
+          </Button>
+        )}
 
-                        <li className={css.item}>
-                            Phone number:<p className={css.data}>{userInfo.number}</p>
-                        </li>
-                        {userInfo.price && (
-                            <li className={css.item}>
-                                Price:<p className={css.data}>{userInfo.price} UAH /1 hour</p>
-                            </li>
-                        )}
-                        {userInfo.specialization && !personalLoc && (
-                            <li className={css.item}>
-                                Specialization:<p className={css.data}>{userInfo.specialization} </p>
-                            </li>
-                        )}
-                    </ul>
-                </div>
-                {personalLoc && (
-                    <Button color="primary" onClick={() => setAppModal(!appModal)}>
-                        <UilPen style={{ width: '20px', height: '20px' }} />
-                        <Typography color="text.black" sx={{ lineHeight: 1.285, textTransform: 'none' }}>
-                            Edit profile
-                        </Typography>
-                    </Button>
-                )}
-
-                {children && cloneElement(children, { id: userInfo._id, specialization: userInfo.specialization })}
-            </div>
-            <EditDoctorProfileModal open={appModal} setApp={setAppModal} info={userInfo} />
-        </Card>
-    );
+        {children &&
+          cloneElement(children, {
+            id: userInfo._id,
+            specialization: userInfo.specialization,
+          })}
+      </div>
+      <EditDoctorProfileModal
+        open={appModal}
+        setApp={setAppModal}
+        info={userInfo}
+      />
+    </Card>
+  );
 };
