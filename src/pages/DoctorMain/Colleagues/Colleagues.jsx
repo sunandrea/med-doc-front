@@ -4,7 +4,6 @@ import { Autocomplete, IconButton, Input, TextField } from '@mui/material';
 import LinkViewProfile from 'components/LinkViewProfile/LinkViewProfile';
 import { ProfileBlockDoctore } from 'components/ProfileBlockDoctore/ProfileBlockDoctore';
 import UsersList from 'components/UsersList/UsersList';
-import debounce from 'lodash.debounce';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllUsersForRole } from 'redux/info/operation';
@@ -30,7 +29,6 @@ const specializations = [
   'Oncologist',
 ];
 const categories = ['Show All', 'The First', 'The Second', 'Higher'];
-// const DEBOUNCE_DELAY = 300;
 
 const autocompleteStyles = {
   '&.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.MuiAutocomplete-root .MuiOutlinedInput-root':

@@ -10,7 +10,6 @@ import {
   updateUserInfo,
   updateAvatar,
 } from './operation';
-import { update } from 'react-spring';
 
 const initialState = {
   currentUserInfo: null,
