@@ -1,14 +1,16 @@
 import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const LinkViewProfile = ({ children, id }) => {
-    return (
-        <Link to={`${id}`}>
-            <Button variant="outlined" color="primary">
-                {children}
-            </Button>
-        </Link>
-    );
+  const location = useLocation();
+  const previousPath = location.pathname;
+  return (
+    <Link to={`${id}`} state={{ previousPath }}>
+      <Button variant="outlined" color="primary">
+        {children}
+      </Button>
+    </Link>
+  );
 };
 
 export default LinkViewProfile;
